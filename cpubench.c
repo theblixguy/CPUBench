@@ -208,7 +208,7 @@ int main(int argc, char *argv[]) {
 		dd = (strcmp(argv[3], "--dumpdigits") == 0) ? 1 : 0; }
 
 	/* Invalid command line parameters */
-	else { fprintf(stderr, "%sError: Invalid command-line arguments!\nUsage: pibench [digits] [threading] [parameter]\nParameter:\n--printdigits : Prints all digits of PI on console\n--nodigits : Suppresses printing of digits of PI on console (Use this when doing multithreaded bench)\n--dumpdigits : Saves all the digits of PI to a text file\nThreading:\n--singlethreaded : Stresses only one core (PI)\n--multithreaded : Stresses all the cores (PRIMES)\n\nUsage example: pibench 50000 --singlethreaded --printdigits%s\n", TXTRED, TXTNORMAL); exit(1); }
+	else { fprintf(stderr, "%sError: Invalid command-line arguments!\nUsage: cpubench [digits] [threading] [parameter]\nParameter:\n--printdigits : Prints all digits of PI on console\n--nodigits : Suppresses printing of digits of PI on console (Use this when doing multithreaded bench)\n--dumpdigits : Saves all the digits of PI to a text file\nThreading:\n--singlethreaded : Stresses only one core (PI)\n--multithreaded : Stresses all the cores (PRIMES)\n\nUsage example: cpubench 50000 --singlethreaded --printdigits%s\n", TXTRED, TXTNORMAL); exit(1); }
 	
 	/* Print introductory text */
 	struct utsname uname_ptr;
