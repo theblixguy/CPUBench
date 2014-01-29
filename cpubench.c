@@ -81,7 +81,7 @@ __inline__ int clc_prime(unsigned long long max)
 
 		for (y = 2; y < x; y++) {
 			if (x % y == 0) {
-				pnums = 0;
+				pnum = 0;
 				break;
 			}
 		}
@@ -96,7 +96,7 @@ __inline__ int clc_prime(unsigned long long max)
 	printf("Done!\n\nTime taken (seconds): %lf\n", time_taken);
 
 	/* Return total primes */
-	return total;
+	return tpnums;
 }
 
 /* Calculate pi digits main function */
